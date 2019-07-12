@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*设置不会因为内边距和 边框撑开宽度和高度*/
+    box-sizing: border-box;
+}
+
+html,body{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+}
+.page{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: aquamarine;
+    transform: translateX(375px);
+    transition: all 1s;
+}
+
+.active{
+    transform: translateX(0px) !important;
+}
+.startGame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.startBtn{
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    border: none;
+    background: darkkhaki;
+    color: #fff;
+    /*阴影不进行偏移*/
+    box-shadow:0 0 30px  ;
+    border-radius: 10px;
+
+}
+
+
+.gaming{
+    background-color: darkkhaki;
+    border-radius: 10px;
+}
+
+
+.gaming{
+    padding:40px  20px;
+
+}
+.gaming h1{
+    margin: 20px 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+.gaming .options{
+    background-color: beige;
+    border-radius: 10px;
+}
+
+.gaming .options>div{
+    margin: 10px 0;
+    padding: 5px 10px;
+    color: darkkhaki;
+    border-radius: 5px;
+}
+
+.correct{
+    background-color: darksalmon;
+}
+.error{
+    background: red;
+}
+
+
+.endGame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.endGame h1{
+    margin: 40px;
+}
+
+.reStart{
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    border: none;
+    background: darkkhaki;
+    color: #fff;
+    /*阴影不进行偏移*/
+    box-shadow:0 0 30px ;
+    border-radius: 10px;
+}
+
+
